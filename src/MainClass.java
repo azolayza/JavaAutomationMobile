@@ -3,7 +3,7 @@ import org.junit.Test;
 public class MainClass
     {
     int class_number = 20;
-
+    
        @Test
          public void testGetClassNumber() {
             int c = getClassNumber();
