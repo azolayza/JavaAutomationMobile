@@ -1,13 +1,18 @@
 import org.junit.Assert;
 import org.junit.Test;
 public class MainClass
-    {
-        @Test
-        public void MainClassTest() {
-            int a = getLocalNumber();
-            Assert.assertTrue("getLocalNumber return 14", a==14);}
+{
+ String class_string = "Hello, world";
 
-            public int getLocalNumber() {
-                    return 14;
-                }
+        @Test
+        public void testGetClassString() {
+          // String sub1 = " Hello ";
+            String s = getClassString();
+            Assert.assertTrue("Our string contains Hello", s.contains("Hello"));
+        }
+
+        public String getClassString(){
+         String a = this.class_string;
+            return a;
+        }
     }
