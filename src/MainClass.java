@@ -2,15 +2,12 @@ import org.junit.Assert;
 import org.junit.Test;
 public class MainClass
     {
-    int class_number = 20;
-    
-       @Test
-         public void testGetClassNumber() {
-            int c = getClassNumber();
-           Assert.assertTrue("GetClassNumber less than 45", c>45);
-       }
+        @Test
+        public void MainClassTest() {
+            int a = getLocalNumber();
+            Assert.assertTrue("getLocalNumber return 14", a==14);}
 
-        public int getClassNumber() {
-            return this.class_number;
-        }
+            public int getLocalNumber() {
+                    return 14;
+                }
     }
