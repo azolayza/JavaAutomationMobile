@@ -6,9 +6,10 @@ public class MainClass
 
         @Test
         public void testGetClassString() {
-          // String sub1 = " Hello ";
             String s = getClassString();
-            Assert.assertTrue("Our string contains Hello", s.contains("Hello"));
+            String sub1 = "Hello";
+            String sub2 = "hello";
+            Assert.assertTrue("Our string not contains Hello or hello", s.contains(sub1)||s.contains(sub2));
         }
 
         public String getClassString(){
